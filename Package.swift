@@ -26,7 +26,8 @@ let package = Package(
             dependencies: []),
         .executableTarget(
             name: "example-2",
-            dependencies: [.target(name: "example-1"),]),
+            dependencies: [.target(name: "example-1"),],
+            resources: [.copy("Resources"),]),
         .testTarget(
             name: "example-1Tests",
             dependencies: ["example-1"]),
