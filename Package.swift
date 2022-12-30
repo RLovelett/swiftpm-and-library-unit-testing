@@ -10,6 +10,9 @@ let package = Package(
         .library(
             name: "example-1",
             targets: ["example-1"]),
+        .executable(
+            name: "example-2",
+            targets: ["example-2"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -21,6 +24,9 @@ let package = Package(
         .target(
             name: "example-1",
             dependencies: []),
+        .executableTarget(
+            name: "example-2",
+            dependencies: [.target(name: "example-1"),]),
         .testTarget(
             name: "example-1Tests",
             dependencies: ["example-1"]),

@@ -2,7 +2,7 @@
 
 set -ex
 
-export XCODE_SCHEME="example-1"
+export XCODE_SCHEME="example-1-Package"
 export DESTINATION="platform=iOS Simulator,name=iPad Pro (9.7-inch),OS=15.5"
 export PRODUCT="Debug-iphonesimulator"
 
